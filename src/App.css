@@ -1,33 +1,35 @@
-.App {
+.container {
+  overflow: hidden;
+}
+
+.movies-table {
+  table-layout: fixed;
+	overflow-x: auto;
+	width: 100%;
+}
+
+.movies-table td,
+.movies-table th {
+  padding: 10px;
+}
+
+.movies-table tbody tr:nth-child(even) {
+	background-color: lightgray;
+}
+
+.movies-table tr td:nth-child(1),
+.movies-table tr th:nth-child(1) {
+  width: 65%;
+}
+.movies-table tr td:nth-child(2),
+.movies-table tr th:nth-child(2) {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.movies-table tr td:nth-child(3),
+.movies-table tr th:nth-child(3) {
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movies-table tr td:nth-child(4),
+.movies-table tr th:nth-child(4) {
+  text-align: center;
 }
